@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engineers Point | Pneumatics</title>
+    <link rel="stylesheet" href="pneumatics_hompage.css">
+    <link rel="stylesheet" media="screen and (max-width: 800px)" href="phone.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Play&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <navbar id="navbar">
+        <div id="Logo_hamburger">
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+        </div>
+        <div id="nonnavbar">
+            <img src="logo.png" alt="engineerspoint.com">
+            <ul>
+                <li><a href="https://sachinyadav74.github.io/Home/Home/home.html">Home</a></li>
+                <li><a href="https://sachinyadav74.github.io/Extras/extras/extras.html">Calculate</a></li>
+                <li><a href="https://sachinyadav74.github.io/Formulas/Formulas/formulas.html">Formulas</a></li>
+                <li><a href="https://sachinyadav74.github.io/QuesAndAns/QuesAns/quesans.html">Ques&Ans</a></li>
+            </ul>
+        </div>
+        <div id="hamburger">
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <div>
+                        <div class="content">
+                            <li><a
+                                    href="https://sachinyadav74.github.io/Mechanical/Mechanical/mechanical_home.html">Mechanical</a>
+                            </li>
+                            <li><a
+                                    href="https://sachinyadav74.github.io/Electrical/Electrical/electrical_home.html">Electrical</a>
+                            </li>
+                            <li><a
+                                    href="https://sachinyadav74.github.io/Pneumatics/Pneumatics/pneumatics_home.html">Pneumatics</a>
+                            </li>
+                            <li><a
+                                    href="https://sachinyadav74.github.io/ElectroPneumatics/ElectroPneumatics/electropneumatic_hompage.html">Electropneumatics</a>
+                            </li>
+                            <li><a
+                                    href="https://sachinyadav74.github.io/Hydraulics/Hydraulics/hydraulics_homepage.html">Hydraulics</a>
+                            </li>
+                        </div>
+                        <div class="content">
+                            <li><a href="#basic_safety">Basic Safety</a></li>
+                            <li><a href="#pneumatic_working">Working Principle</a></li>
+                            <li><a href="#components">Components</a></li>
+                            <li><a href="#circuit_designing">Circuit desiging</a></li>
+                            <li><a href="#force_calculator">Cylinder force Calculation</a></li>
+                            <li><a href="#Cascading">Pneumatics Cascading</a></li>
+                        </div>
+                        <div class="content">
+                            <li><a href="https://sachinyadav74.github.io/SI_units/SI_units/si_units.html">SI Units</a>
+                            </li>
+                            <li><a href="https://sachinyadav74.github.io/Extras/extras/extras.html">Area </a></li>
+                            <li><a href="https://sachinyadav74.github.io/Extras/extras/extras.html">Volume</a></li>
+                            <li><a href="https://sachinyadav74.github.io/Extras/extras/extras.html">Mass</a></li>
+                            <li><a href="https://sachinyadav74.github.io/Formulas/Formulas/formulas.html">Formulas</a>
+                            </li>
+                        </div>
+                    </div>
+                </div>
+
+                <script>
+                    function openNav() {
+                        document.getElementById("myNav").style.width = "100%";
+                    }
+
+                    function closeNav() {
+                        document.getElementById("myNav").style.width = "0%";
+                    }
+                </script>
+            </div>
+    </navbar>
+    <section id="home">
+        <div id="full_page_content">
+            Content
+            <div class="content">
+                <li><a href="#basic_safety">Basic Safety</a></li>
+                <li><a href="#pneumatic_working">Working Principle</a></li>
+                <li><a href="#components">Components</a></li>
+                <li><a href="#circuit_designing">Circuit desiging</a></li>
+                <li><a href="#force_calculator">Cylinder force Calculation</a></li>
+                <li><a href="#Cascading">Pneumatics Cascading</a></li>
+            </div>
+            <div class="content">
+                <li><a href="https://sachinyadav74.github.io/Mechanical/Mechanical/mechanical_home.html">Mechanical</a>
+                </li>
+                <li><a href="https://sachinyadav74.github.io/Electrical/Electrical/electrical_home.html">Electrical</a>
+                </li>
+                <li><a href="https://sachinyadav74.github.io/Pneumatics/Pneumatics/pneumatics_home.html">Pneumatics</a>
+                </li>
+                <li><a
+                        href="https://sachinyadav74.github.io/ElectroPneumatics/ElectroPneumatics/electropneumatic_hompage.html">Electropneumatics</a>
+                </li>
+                <li><a
+                        href="https://sachinyadav74.github.io/Hydraulics/Hydraulics/hydraulics_homepage.html">Hydraulics</a>
+                </li>
+            </div>
+            <div class="content">
+                <li><a href="https://sachinyadav74.github.io/SI_units/SI_units/si_units.html">SI Units</a></li>
+                <li><a href="https://sachinyadav74.github.io/Extras/extras/extras.html">Area </a></li>
+                <li><a href="https://sachinyadav74.github.io/Extras/extras/extras.html">Volume</a></li>
+                <li><a href="https://sachinyadav74.github.io/Extras/extras/extras.html">Mass</a></li>
+                <li><a href="https://sachinyadav74.github.io/Formulas/Formulas/formulas.html">Formulas</a></li>
+            </div>
+        </div>
+        <div id="hello">
+            <h1 class="hprimary">Welcome Engineers</h1>
+            <div id="intro">
+                <p>Hello all !!! <br>
+                    I welcome you all to Engineers Point Pneumatics page. Pneumatics play important role in automation.
+                    Many a
+                    times pneumatics is used as drive unit for automation system. If you follow the content of this page
+                    you will
+                    be able to design pure pneumatic Circuits and also make automation with ease. You can also see
+                    topics like
+                    <a href="">Pneumatic control elements</a>, <a href="">Pneumatic Componenets</a>, <a
+                        href="">Pneumatic circuit</a>,
+                    <a href="">Cylinder Force calculation</a> etc. So make sure you read these topic and get you
+                    problems solved.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- Basic Safety -->
+    <section id="basic_safety">
+        <details>
+            <summary>
+                Basic Safety
+            </summary>
+            <div>
+                <p>Pneumatic basically works of compressed air system. Although air itself is harmless but compressed
+                    air
+                    with high pressure is dangerous. High pressure drive, valves and other pneumatic
+                    Componenets that work on high pressure can injure humans severly. So make sure you follow given
+                    safety
+                    measures.
+                </p>
+                <div>
+                    <li>Always close main pneumatic supply valve before any type maintenance.</li>
+                    <li>Make sure pneumatic drives are covered.</li>
+                </div>
+            </div>
+        </details>
+    </section>
+    <section id="pneumatic_working">
+        <details>
+            <summary>Pneumatic Working</summary>
+            <p>Pneumatic system work on compressed pneumatic air. This compressed is
+                used in pneumatic cylinder, motors and other drives.
+                Pneumatic Cylinder is of low cost and very easy for installation. It has simple construction and
+                available
+                in various dimensions.
+                This cylinder is used in machines for clamping, shifting, positioning, material flow branching, etc.
+                Other applications include packaging, filing, locking, sorting, stamping, and many more.
+                Machine like CNC, Drilling, Turning, Sawing, Forming use pneumatic system widely.
+                The Advantages and disadvantages of pnuematic system are defined below:
+            <h4>Advantages</h4>
+            <li>Air is available everywhere and in unlimited amount.</li>
+            <li>Air can be transported in pipelines easily.</li>
+            <li>Its is economical.</li>
+            <li>Compressed air can be stored in a reservoir and used when required. The reservoir itself can be
+                transported.
+            </li>
+            <li>It is relatively insensitive to temperature.</li>
+            <li>There are no risek of fire explosion</li>
+            <li>If the pneumatic air is not lubricated it is clean and does not contaminates eenvironment.</li>
+            <li>Compressed air componenets have high working speed</li>
+            <h4>Disadvantages</h4>
+            <li>Compressed air need good preparation. Dirt and other contaminated particle should be removed.</li>
+            <li>The force available from pneumatics is up to 50,000Newtons only.</li>
+            <li>The exhaust are loud.</li>
+            <li>Low accuracy</li>
+            <li>Low loading</li>
+            <li>Uneven moving speed.</li>
+            </p>
+            <p>
+            <h4>Selection criteria for Pneumatic Actuators.</h4>
+            <li>Force</li>
+            <li>Sroke</li>
+            <li>Safety and reiability</li>
+            <li>Types of motion</li>
+            <li>Speed</li>
+            <li>Controllability</li>
+            <li>Storage</li>
+            <li>Energy costs</li>
+            <li>Service life</li>
+            </p>
+            <h4>Pneumatic System oerview</h4>
+            <li>Supply elements (Compressor, FRL)</li>
+            <li>Signalling Elements (Pushbuttons, levers) </li>
+            <li>Processing Elements (and gate, or gates)</li>
+            <li>Adjusting Components (Direction control valves)</li>
+            <li>Power Output(Motor, cylinders)</li>
+        </details>
+    </section>
+    <!-- Pneumatic Components -->
+    <section id="components">
+        <details>
+            <summary>Pneumatic Components</summary>
+
+            <h4></h4>
+            <!-- Supply elements -->
+            <h3>Pneumatic Supply elements</h3>
+            <div>
+                <p>Pneumatic components can be classified into supply elements, signal elements, processing element,
+                    adjusting elements and power outputs.
+                    Pneumatic componenets are designed for maximun operating pressure of 8 to 10bar. There are some
+                    pressure
+                    loss from distribution system till operating
+                    system, hence we get 6 to 7 bar pressure.
+                <h4>Supply Elements</h4>
+                <p>Supply element are compressors where the air is prepared. The air from environment is cleaned</p>
+                <p>Another supply element type is FRL(Filter Regulator Lubricator ). It's main task is to filter the air
+                    coming from resrvoirs or compressor. It also regulates the pressure and adds some oil for
+                    lubricating
+                    the pneumatic components. Here it
+                    also performs the task of regulator as well as lubricator.
+                </p>
+                <p>Symbol of pneumatic FRL is as below:
+                </p>
+                <p>
+
+                    <img src="frl1.JPG"  style="height:250px; width:auto" alt="FRL_1">
+                    <img src="frl2.JPG" alt="FRL_2">
+                    <img src="frl2_standard.JPG" alt="FRL_2">
+                    <img src="simplified frl.JPG" alt="Simplified FRL">
+                </p>
+                </p>
+            </div>
+            <!-- Control Elements -->
+            <div>
+                <h4>Pneumatic Valves</h4>
+                <p>Pneumatic valves are used to control the pressure or flow rate of pressure media.
+                    Depending on structure valves are classified as Directiob Control Valves (DCV),
+                    Non-return valves, Flow control valves, Pressure control valves, shut-off valves.
+                </p>
+            </div>
+            <div>
+                <h3>Direction Control Valves</h3>
+                <p>Pneumatic direction control valves control the flow of air signal and perform task of generating,
+                    cancelling, of directing signals.</p>
+                <p>One can decribe valves as:
+                    <li>Number of ports or openings <p>The image below has its ports marked. Three ports are circled red
+                            in
+                            color.</p>
+                        <img src="3by2ports.JPG" alt="3/2valves ports marked">
+                    </li>
+                    <li>Normally opened or close</li>
+                    <img src="normally closed.JPG" alt="nolmally close">
+                    <img src="normally opne.JPG" alt="nolmally open">
+
+                    <li>Numbers of position <p>
+                            In below images you can see the square marking of images define the positions of valve. One
+                            images has 2 positions and other has 3.
+                        </p>
+                    </li>
+                    <img src="5by2position.JPG" alt="">
+                    <img src="5by3position.JPG" alt="">
+                    <li>Actuation method</li>
+                    <img src="detente swith actuated.JPG" alt="Detent switch actuated">
+                    <img src="push btn actuated.JPG" alt="Push Button actuated">
+                    <img src="roller actuated.JPG" alt="Roller actuated">
+                    <img src="pneumatically actuated.JPG" alt="pneumatically actuated">
+                    <li>Return actuatiPneumatic/on method</li>
+                    <img src="return actuation1.JPG" alt="return actuation by spring">
+                    <img src="return actuation2.JPG" alt="pneumaticalyy return actuated">
+                </p>
+                <h4>Components and their description</h4>
+                <div id="component_table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Symbol</th>
+                                <th>Name</th>
+                                <!-- <th>Description</th> -->
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="special_components"><img style="height: 90px; width: auto;"
+                                        src="compressed air supply.JPG" alt="compressed air supply"></td>
+                                <td>Pneumatic supply elements</td>
+                            </tr>
+                            <tr>
+                                <td><img style="height: 90px; width: auto;" src="air service unit (FRL).JPG" alt="air service supply" ></td>
+                                <td>Air service unit (FRL)</td>
+                            </tr>
+                            <tr>
+                                <td><img style="height: 90px; width: auto;" src="simplified frl.JPG" alt="simplified frl"></td>
+                                <td>Simplified FRL</td>
+                            </tr>
+                            <tr>
+                                <td><img style="height: 90px; width: auto;" src="singel acting spring return cylinder.JPG"
+                                        alt="singel acting spring return cylinder"></td>
+                                <td>singel acting spring return cylinder</td>
+                            </tr>
+                            <tr>
+                                <td><img style="height: 90px; width: auto;" src="double acting cyinder.JPG" alt="double acting cylinder"></td>
+                                <td>Double acting cylinder</td>
+                            </tr>
+                            <tr>
+                                <td><img style="height: 90px; width: auto;" src="motor.JPG" alt="Pneumatic motor" style="height: 300px; width: 300px;">
+                                </td>
+                                <td>Pneumatic Motor</td>
+                            </tr>
+                            <tr>
+                                <td><img style="height: 90px; width: auto;" style="height: 300px; width: 300px;" src="semi_rotary.JPG" alt="semi-rotary">
+                                </td>
+                                <td>Semi-rotary</td>
+                            </tr>
+                            <tr>
+                                <td><img style="height: 90px; width: auto;" src="vaccum_generator.JPG" alt="vaccum_generator">
+                                </td>
+                                <td>Vaccum Generator</td>
+                            </tr>
+                            <tr>
+                                <td><img style="height: 90px; width: auto;" src="3by2 valve.JPG" alt="3/2 way normally open valve">
+                                </td>
+                                <td>3/2 way normally open direction control valve</td>
+                            </tr>
+                            <tr>
+                                <td><img style="height: 90px; width: auto;" src="3by2normally closed valve.JPG" alt="3/2 way normally closed valve"></td>
+                                <td>3/2 way normally closed direction control valve</td>
+                            </tr>
+                            <tr>
+                                <td><img style="height: 90px; width: auto;" src="5by2detentswitch.JPG" alt="5/2 detente switch">
+                                </td>
+                                <td>5/2 detent switch direction control valve</td>
+                            </tr>
+                            <tr>
+                                <td><img src="5by2way  memory valve.JPG" alt="5by2way  memory valve"></td>
+                                <td>5/2 way valve spring return</td>
+                            </tr>
+                            <tr>
+                                <td><img src="5by2double valve.JPG" alt="5by2way  memory valve">
+                                </td>
+                                <td>5/2 way valve</td>
+                            </tr>
+                            <tr>
+                                <td><img src="and gate.JPG" alt="And gate/Two pressure valve">
+                                </td>
+                                <td>And gate/Two pressure valve</td>
+                            </tr>
+                            <tr>
+                                <td><img style="height: 90px; width: auto;" src="shuttle valve.JPG" alt="shuttle valve"></td>
+                                <td>OR gate/shuttle valve</td>
+                            </tr>
+                            <tr>
+                                <td><img style="height: 90px; width: auto;" src="check valve.JPG" alt="check valv"></td>
+                                <td>check valve</td>
+                            </tr>
+                            <tr>
+                                <td><img style="height: 90px; width: auto;" src="counter.JPG" alt="counter"></td>
+                                <td>Counter</td>
+                            </tr>
+                            <tr>
+                                <td><img style="height: 90px; width: auto;" src="offdelaytimer.JPG" alt="off delay timer"></td>
+                                <td>Off delay timer</td>
+                            </tr>
+                            <tr>
+                                <td><img style="height: 90px; width: auto;" src="ondelaytime.JPG" alt="on delay timer"></td>
+                                <td>On delay timer</td>
+                            </tr>
+                            <tr>
+                                <td><img style="height: 90px; width: auto;" src="one way trip lever.JPG" alt="one way trip lever">
+                                </td>
+                                <td>One way trip lever</td>
+                            </tr>
+                            <tr>
+                                <td><img src="oneway flow control valve.JPG" alt="one way flow control valve"></td>
+                                <td>One way flow control valve</td>
+                            </tr>
+                            <tr>
+                                <td><img style="height: 90px; width: auto;" src="quick exhaust valve.JPG" alt="quick exhaust valve"></td>
+                                <td>Quick Exhaúst Valve</td>
+                            </tr>
+                            <tr>
+                                <td><img style="height: 90px; width: auto;" src="roller_switch.JPG" alt="roller"></td>
+                                <td>Roller switch</td>
+                            </tr>
+                            <tr>
+                                <td><img style="height: 90px; width: auto;" src="stepper module.JPG" alt="stepper module"></td>
+                                <td>Stepper module</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </details>
+    </section>
+    <!-- Circuit -->
+    <section id="circuit_designing">
+        <details>
+            <summary>Basic Circuits</summary>
+            <div>
+                <div>
+                    <img src="basic circuit.JPG" alt="">
+                    <p>
+                        In this basic circuit 3/2pushbutton operated normally closed valve is used
+                        as a signal elements then single acting spring return signal is used as drive elements.
+                        When pushbutton is pressed cylinder extends and as long as button is pressed the cylinder
+                        remains in extended position. As soon as button is released cylinder retracts to its home
+                        position.
+                        This circuit can be used where there is no logic circuit and only manual pushbutton is used
+                        for actuating the cylinder.
+                    </p>
+                </div>
+                <div>
+                    <h4>Double acting cylinder</h4>
+                    <img src="double acting cylinder circuit.JPG" alt="">
+                    <p>
+                        In this circuit 5/2 detent switch operated valve is used as a signal
+                        element and double acting cylinder is connected to it. Here normally cylinder is
+                        retracted to home position. As detent switch is rotated cylinder extends and remain in that
+                        position
+                        until detent switch is again rotated to its original position. This circuit can be used where
+                        you want to lock cylinder in its extended position.
+                    </p>
+                </div>
+                <div>
+                    <h4>Flow control Valve</h4>
+                    <img src="flow control valve.JPG" alt="">
+                    <p>In this ciruit if you see clearly it's same as for double acting cylinder
+                        circuit, the difference is that flow control valve is added betweeb valve and
+                        cylinder. This is for reducing the cylinder speed. It is One way flow control valve, used for
+                        controlling
+                        cylinder speed.
+                    </p>
+                    <p>
+                    <h5>How one way flow control valve works?</h5>
+                    When air comes from port 2 the air flow is reduced as there is some throtelling
+                    in the one way flow control. There is a check valve installed parallely to it. When the air comes
+                    from`
+                    cylinder the the valve is pushed and air coming from cylinder is not controled. Hence it is called
+                    one
+                    way flow cotrol valve.
+                    </p>
+                    <p>
+                    <h5>Meter In</h5>
+                    <img src="meter in.JPG" alt="Meter_in" srcset="">
+                    When air going in the cylinder is controlled then the one flow control valve is called
+                    meter in.
+                    </p>
+                    <p>
+                    <h5>Meter Out</h5>
+                    <img src="meter out.JPG" alt="Meter_out" srcset="">
+                    When the air going out of the cylinder is controlled then the one way flow control valve is
+                    called meter out.
+                    </p>
+                </div>
+                <div>
+                    <h4>Pneumatically operated Valves</h4>
+                    <p>For Indirect controlling cylinder or any other actuator, we use pneumatically actuated valves
+                        their
+                        advantages are as follow:</p>
+                    <li>We can set different pressure for control circuit and for driveing circuit.</li>
+                    <li>Due to this the control circuti componenets are not exposed to high pressure, this increase
+                        their
+                        lifetime.</li>
+                    <h3>Different types of pneumatically actuated valves</h3>
+                    <li>3/2 spring return valve</li>
+                    <img src="valve1.JPG" alt="valve1" srcset="">
+                    <li>5/2 pneumaticaly actuated single pilot</li>
+                    <img src="valve2.JPG" alt="valve2">
+                    <li>5/3 pneumaticaly actuated</li>
+                    <img src="valve1.JPG" alt="">
+                </div>
+                <div>
+                    <h4>Logic operators</h4>
+                    <h3>And Gate</h3>
+                    <img src="andgate.JPG" alt="">
+                    <p>It has three port, 2 for input and 1 for output signal. This valve actuates only when pressure is
+                        availabel at both the sides. It is also known as two pressure valve</p>
+                    <h3>OR Gate</h3>
+                    <img src="orgate.JPG" alt="">
+                    <p>It has three port, 2 for input and 1 for output signal. This valve give output signal only when
+                        pressure is available at either one of its side. It is also known as shuttle valve.</p>
+                </div>
+                <div>
+                    <h4>Roller switch</h4>
+                    <img src="rollerswitch1.JPG" alt="">
+                    <p>A roller switch is a type of proximity sensor which is used to detect the cylinder positions.
+                        Roller switches are used for automating the process. In this circuit roller switch operated
+                        3/2 normally closed valve is used to detect the cylinder most extended position. Psuhbutton is
+                        pressed
+                        the 5/2 valve is actuated and cylinder extends. As soon as piston reaches to most extended
+                        position
+                        the roller switch is actuated and it generates signally causing cylinder to retract cylinder
+                        automatically.
+                        This type of circuit is used when we want to automate the ciruit. The condition be like if we
+                        press
+                        the button
+                        the cylinde must extend and as it extends to forward most position it must retract
+                        automatically.
+                    </p>
+                </div>
+                <div>
+                    <h4>Roller switch with 2 cylinders.</h4>
+                    <img src="rollerwith2cylinder.JPG" alt="roller switch with 2 cylinders">
+                    <p>In this circuit 2 roller switch valves are used to create a automated circuit.
+                        Once the button is pressed cylinder extends and then the roller switch 'A1' is activated. This
+                        causes
+                        cylinder 2 to extend and roller switch 'B1' extends. And relatively first cylinder retracts. As
+                        'A0'
+                        retracts to home position
+                        second cylinder also retracts.
+                        This kind of circuit can used where two cylinders have to be operated and second cylinder
+                        follows
+                        third cylinder.
+                    </p>
+                    <p>Look at the circuit below and interpret.</p>
+                    <img src="roller switch with 3 cylinder.JPG" alt="">
+                </div>
+                <div>
+                    <h4>On delay Timer</h4>
+                    <img src="ondelaytimer.JPG" alt="">
+                    <p>In this circuit roller switch is used to retract the cylinder with on delay pneumatic timer
+                        When cylinder is extended then 'A1' roller switch is activated. Then timer gets the signal for
+                        actuation.
+                        In ondelay timer there is a oneway flow control valve installed. That ensures that the time set
+                        for
+                        filling the
+                        reservoir is achieved. The controlled flow of pneumatic air is filled in reservoir and then once
+                        it
+                        is filled then the
+                        valve is activated and signal is achieved after set time delay. In on delay timer the valve is
+                        normally closed.
+                    </p>
+                </div>
+                <div>
+                    <h4>Off delay timer</h4>
+                    <img src="offdelaytimer.JPG" alt="">
+                    <p>In this circuit motor rotates by default. When pushbutton is pressed then the motor </p>
+                    stops after the time set in the timer. The reservoir fills and then the valve actuates generating
+                    signal.
+                    In off delay timer the valve is normally open.
+                </div>
+                <div>
+                    <h4>Pneumatic Latching</h4>
+                    <img src="pneumatic latchin.JPG" alt="">
+                    <li>In this circuit the circuit is automated for multiple cycle once signal is achieved.
+                        For that when 3/2 normally open pushbutton operated switch is operated then automation circuit
+                        is started. The 3/2 pneumatically operated valve, shuttle valve and a 3/2 normally close
+                        pushbutton
+                        operated
+                        valve is used to latch the pneumatic circuit.
+                    </li>
+                </div>
+            </div>
+        </details>
+    </section>
+    <section id="main">
+        <details>
+            <summary>Cylinder Force Calculator</summary>
+            <div class="container" id="from">
+                <input type="number" id="input1">
+            </div>
+            <div class="text1">
+                Pressure Input
+            </div>
+            <div class="container" id="to">
+                <input type="number" id="input2">
+            </div>
+            <div class="text1">
+                Piston Rod Diameter(Optional)
+            </div>
+            <div class="container" id="to">
+                <input type="number" id="input3">
+            </div>
+            <div id="direction">
+                <label class="checkpoint">Extension Force
+                    <input type="checkbox" checked="checked" id="check1">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="checkpoint">Retraction Force
+                    <input type="checkbox" id="check2">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+            <div class="btn">
+                <button id="convert">Calculate</button>
+            </div>
+            <div class="explaination">
+                <textarea id="explaination" class="exlpaination"></textarea>
+            </div>
+        </details>
+    </section>
+    <section id="Cascading">
+        <details>
+            <summary>
+                Cascading
+            </summary>
+            <p>Uploading Soon</p>
+        </details>
+    </section>
+    <section>
+        <div id="overview">
+            <h1>Overview</h1>
+            <div id="overview_content">
+                <div class="overview_elements">
+                    <h2> <a
+                            href="https://sachinyadav74.github.io/Mechanical/Mechanical/mechanical_home.html">Mechanical</a>
+                    </h2>
+                    <li><a
+                            href="https://sachinyadav74.github.io/Mechanical/Mechanical/mechanical_home.html">Drilling</a>
+                    </li>
+                    <li><a href="https://sachinyadav74.github.io/Mechanical/Mechanical/mechanical_home.html">Milling</a>
+                    </li>
+                    <li><a href="https://sachinyadav74.github.io/Mechanical/Mechanical/mechanical_home.html">Turning</a>
+                    </li>
+                    <li><a
+                            href="https://sachinyadav74.github.io/Mechanical/Mechanical/mechanical_home.html">Tolerance</a>
+                    </li>
+                    <li><a href="https://sachinyadav74.github.io/Mechanical/Mechanical/mechanical_home.html">CNC</a>
+                    </li>
+                    <li><a href="https://sachinyadav74.github.io/Mechanical/Mechanical/mechanical_home.html">Engineerign
+                            Drawings</a></li>
+                    <li><a href="https://sachinyadav74.github.io/Mechanical/Mechanical/mechanical_home.html">Catia
+                            Desiging</a></li>
+                </div>
+                <div class="overview_elements">
+                    <h2> <a
+                            href="https://sachinyadav74.github.io/Electrical/Electrical/electrical_home.html">Electrical</a>
+                    </h2>
+                    <li><a href="https://sachinyadav74.github.io/Electrical/Electrical/electrical_home.html">Electrical
+                            Safety </a></li>
+                    <li><a href="https://sachinyadav74.github.io/Electrical/Electrical/electrical_home.html">Basic
+                            Wirings</a></li>
+                    <li><a href="https://sachinyadav74.github.io/Electrical/Electrical/electrical_home.html">Logical
+                            Wiring</a></li>
+                    <li><a href="https://sachinyadav74.github.io/Electrical/Electrical/electrical_home.html">Circuit
+                            Challenge</a></li>
+                    <li><a href="https://sachinyadav74.github.io/Electrical/Electrical/electrical_home.html">VIR
+                            calculations</a></li>
+                    <li><a href="https://sachinyadav74.github.io/Electrical/Electrical/electrical_home.html">Power
+                            Calculation</a></li>
+                </div>
+                <div class="overview_elements">
+                    <h2> <a
+                            href="https://sachinyadav74.github.io/Pneumatics/Pneumatics/pneumatics_home.html">Pneumatics</a>
+                    </h2>
+                    <li><a href="https://sachinyadav74.github.io/Pneumatics/Pneumatics/pneumatics_home.html">Basic
+                            Safety</a></li>
+                    <li><a href="https://sachinyadav74.github.io/Pneumatics/Pneumatics/pneumatics_home.html">Working
+                            Principle</a></li>
+                    <li><a
+                            href="https://sachinyadav74.github.io/Pneumatics/Pneumatics/pneumatics_home.html">Components</a>
+                    </li>
+                    <li><a href="https://sachinyadav74.github.io/Pneumatics/Pneumatics/pneumatics_home.html">Circuit
+                            desiging</a></li>
+                    <!-- <li><a href="">Circuit Challenge</a></li> -->
+                    <li><a href="https://sachinyadav74.github.io/Pneumatics/Pneumatics/pneumatics_home.html">Cylinder
+                            force Calculation</a></li>
+                    <li><a href="https://sachinyadav74.github.io/Pneumatics/Pneumatics/pneumatics_home.html">Pneumatics
+                            Cascading</a></li>
+                </div>
+                <div class="overview_elements">
+                    <h2> <a
+                            href="https://sachinyadav74.github.io/ElectroPneumatics/ElectroPneumatics/electropneumatic_hompage.html">Electropneumatics</a>
+                    </h2>
+                    <li><a
+                            href="https://sachinyadav74.github.io/ElectroPneumatics/ElectroPneumatics/electropneumatic_hompage.html">Basic
+                            Safety</a></li>
+                    <li><a
+                            href="https://sachinyadav74.github.io/ElectroPneumatics/ElectroPneumatics/electropneumatic_hompage.html">Solenoids</a>
+                    </li>
+                    <!-- <li><a href="">Solenoids Working</a></li> -->
+                    <li><a
+                            href="https://sachinyadav74.github.io/ElectroPneumatics/ElectroPneumatics/electropneumatic_hompage.html">Circuit
+                            making</a></li>
+                    <li><a
+                            href="https://sachinyadav74.github.io/ElectroPneumatics/ElectroPneumatics/electropneumatic_hompage.html">Reed
+                            Switches</a></li>
+                    <li><a
+                            href="https://sachinyadav74.github.io/ElectroPneumatics/ElectroPneumatics/electropneumatic_hompage.html">Circuit
+                            Challenge</a></li>
+                    <li><a
+                            href="https://sachinyadav74.github.io/ElectroPneumatics/ElectroPneumatics/electropneumatic_hompage.html">Automation
+                            Circuit</a></li>
+                </div>
+                <div class="overview_elements">
+                    <h2> <a
+                            href="https://sachinyadav74.github.io/Hydraulics/Hydraulics/hydraulics_homepage.html">Hydraulics</a>
+                    </h2>
+                    <li><a href="https://sachinyadav74.github.io/Hydraulics/Hydraulics/hydraulics_homepage.html">Basic
+                            Safety</a></li>
+                    <li><a href="https://sachinyadav74.github.io/Hydraulics/Hydraulics/hydraulics_homepage.html">Hydraulics
+                            Pipes</a></li>
+                    <li><a
+                            href="https://sachinyadav74.github.io/Hydraulics/Hydraulics/hydraulics_homepage.html">Pumps</a>
+                    </li>
+                    <li><a href="https://sachinyadav74.github.io/Hydraulics/Hydraulics/hydraulics_homepage.html">Hydraulic
+                            oils</a></li>
+                    <li><a href="https://sachinyadav74.github.io/Hydraulics/Hydraulics/hydraulics_homepage.html">Hydraulics
+                            Circuits</a></li>
+                    <li><a href="https://sachinyadav74.github.io/Hydraulics/Hydraulics/hydraulics_homepage.html">Circuit
+                            Challenge</a></li>
+                    <li><a
+                            href="https://sachinyadav74.github.io/Hydraulics/Hydraulics/hydraulics_homepage.html">Componenets</a>
+                    </li>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="center2">
+            Copyright &copy. All rights reserved
+        </div>
+    </footer>
+</body>
+
+</html>
